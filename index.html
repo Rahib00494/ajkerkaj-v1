@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +34,10 @@
     </div>
   </header>
 
-
   <!-- Hero -->
   <main>
 
     <section class="hero">
-
       <div class="container hero-grid">
 
         <div class="hero-content">
@@ -80,7 +79,6 @@
           </div>
 
         </div>
-
 
         <!-- Hero Visual -->
         <div class="hero-visual">
@@ -133,13 +131,10 @@
         </div>
 
       </div>
-
     </section>
-
 
     <!-- Services -->
     <section id="services" class="services section">
-
       <div class="container">
 
         <div class="section-heading">
@@ -150,7 +145,6 @@
 
           <a href="#booking" class="text-link">View all services →</a>
         </div>
-
 
         <div class="service-grid">
 
@@ -195,15 +189,11 @@
           </article>
 
         </div>
-
       </div>
-
     </section>
-
 
     <!-- How It Works -->
     <section id="how-it-works" class="how section">
-
       <div class="container">
 
         <div class="center-heading">
@@ -233,20 +223,15 @@
           </div>
 
         </div>
-
       </div>
-
     </section>
-
 
     <!-- Why Us -->
     <section id="why-us" class="why section">
-
       <div class="container why-grid">
 
         <div>
           <span class="eyebrow">WHY AJKERKAJ</span>
-
           <h2>Reliable help for everyday life.</h2>
 
           <p class="why-text">
@@ -256,7 +241,6 @@
 
           <a href="#booking" class="btn-primary">Book a Service →</a>
         </div>
-
 
         <div class="benefits">
 
@@ -285,15 +269,11 @@
           </div>
 
         </div>
-
       </div>
-
     </section>
-
 
     <!-- Booking -->
     <section id="booking" class="booking section">
-
       <div class="container booking-wrap">
 
         <div class="booking-content">
@@ -311,22 +291,31 @@
           </div>
         </div>
 
-
         <form id="bookingForm" class="booking-form">
 
           <label>
             Full Name
-            <input type="text" placeholder="Enter your name" required>
+            <input
+              type="text"
+              name="full_name"
+              placeholder="Enter your name"
+              required
+            >
           </label>
 
           <label>
             Phone Number
-            <input type="tel" placeholder="+880 1XXXXXXXXX" required>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+880 1XXXXXXXXX"
+              required
+            >
           </label>
 
           <label>
             Select Service
-            <select required>
+            <select name="service" required>
               <option value="">Choose a service</option>
               <option>Home Cleaning</option>
               <option>AC Servicing</option>
@@ -337,7 +326,11 @@
 
           <label>
             Address
-            <textarea placeholder="Enter your address in Barishal" required></textarea>
+            <textarea
+              name="address"
+              placeholder="Enter your address in Barishal"
+              required
+            ></textarea>
           </label>
 
           <button type="submit" class="submit-btn">
@@ -351,15 +344,12 @@
         </form>
 
       </div>
-
     </section>
 
   </main>
 
-
   <!-- Footer -->
   <footer id="contact">
-
     <div class="container footer-grid">
 
       <div>
@@ -393,10 +383,12 @@
         © 2026 AjkerKaj. All rights reserved.
       </div>
     </div>
-
   </footer>
 
+  <!-- Supabase Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+  <!-- Website JavaScript -->
   <script src="script.js"></script>
 
 </body>
