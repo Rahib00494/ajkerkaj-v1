@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -38,6 +39,7 @@ a {
 }
 
 /* Header */
+
 .header {
   position: sticky;
   top: 0;
@@ -114,6 +116,7 @@ a {
 }
 
 /* Hero */
+
 .hero {
   overflow: hidden;
   background:
@@ -219,6 +222,7 @@ a {
 }
 
 /* Hero App Card */
+
 .hero-visual {
   position: relative;
   min-height: 450px;
@@ -337,6 +341,7 @@ a {
 }
 
 /* General Sections */
+
 .section {
   padding: 95px 0;
 }
@@ -375,11 +380,12 @@ a {
   white-space: nowrap;
 }
 
-/* Services */
+/* Services - 7 Cards */
+
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .service-card {
@@ -388,6 +394,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 18px;
   transition: 0.25s;
+  min-width: 0;
 }
 
 .service-card:hover {
@@ -416,6 +423,18 @@ a {
   background: linear-gradient(135deg, #cffafe, #a5f3fc);
 }
 
+.appliance {
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+}
+
+.painting {
+  background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+}
+
+.shifting {
+  background: linear-gradient(135deg, #ffedd5, #fed7aa);
+}
+
 .service-info {
   padding: 22px;
 }
@@ -435,7 +454,8 @@ a {
 
 .service-info h3 {
   color: var(--dark);
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 1.4;
   margin: 17px 0 7px;
 }
 
@@ -452,6 +472,7 @@ a {
 }
 
 /* How It Works */
+
 .how {
   background: #f8faf9;
 }
@@ -498,6 +519,7 @@ a {
 }
 
 /* Why Us */
+
 .why-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -549,6 +571,7 @@ a {
 }
 
 /* Booking */
+
 .booking {
   background: var(--dark);
   color: white;
@@ -628,10 +651,16 @@ a {
   font-size: 14px;
   font-weight: 800;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .submit-btn:hover {
   background: var(--primary-dark);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .form-small {
@@ -641,6 +670,7 @@ a {
 }
 
 /* Footer */
+
 footer {
   background: #0b1120;
   color: #94a3b8;
@@ -686,8 +716,10 @@ footer {
   font-size: 12px;
 }
 
-/* Responsive */
+/* Tablet Responsive */
+
 @media (max-width: 900px) {
+
   .hero-grid,
   .why-grid,
   .booking-wrap {
@@ -704,7 +736,7 @@ footer {
   }
 
   .service-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .why-grid {
@@ -712,7 +744,10 @@ footer {
   }
 }
 
+/* Mobile Responsive */
+
 @media (max-width: 700px) {
+
   .nav-links {
     display: none;
   }
@@ -750,7 +785,10 @@ footer {
   }
 }
 
+/* Small Mobile */
+
 @media (max-width: 500px) {
+
   .container {
     width: min(100% - 28px, 1120px);
   }
@@ -781,5 +819,9 @@ footer {
 
   .booking-form {
     padding: 21px;
+  }
+
+  .service-info h3 {
+    font-size: 17px;
   }
 }
